@@ -25,7 +25,7 @@ custom_theme <- function(){
     panel.grid.major.x = element_blank(),
     panel.grid.minor.x = element_blank(),
     panel.grid.major.y = element_line(color = "#d2d2d2"),
-    panel.grid.minor.y = element_line(color = "#d2d2d2"),
+    panel.grid.minor.y = element_blank(),
     axis.ticks = element_blank(),          # strip axis ticks
     
     # since theme_minimal() already strips axis lines, 
