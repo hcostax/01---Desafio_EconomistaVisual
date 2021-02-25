@@ -191,7 +191,11 @@ print(plot)
 library(Cairo)
 
 
-Cairo(file= here::here("img", "plot_PNG_300_dpi.png"), 
+Cairo(file = here::here("img", 
+  paste0("Plot_Cesta_Basica__", 
+    format(
+      Sys.time(), "%d-%m-%Y__%H-%M"), ".png")
+  ), 
       type="png",
       units="in", 
       width=7, 
@@ -210,8 +214,11 @@ dev.off()
 # salvar plot em pdf - alta definicao
 
 library(Cairo)
-CairoPDF(
-  file = here::here("img", "plot_PDF.png"),
+CairoPDF(file = here::here("img",
+                           paste0("Plot_Cesta_Basica__", 
+                                        format( Sys.time(), "%d-%m-%Y__%H-%M"), 
+                                  ".pdf")
+                           ),
   width = 7, 
   height = 5
 )
